@@ -13,24 +13,27 @@ public class App
 {
     public static void main( String[] args )
     {
+        List<String> results = null;
         System.out.println("-------------------- Stage One Solution ---------------------------------");
 
-        /*StageOneMapper stageOneMapper = new StageOneMapper();
+        StageOneMapper stageOneMapper = new StageOneMapper();
         Solution stageOneSolution = new Solution(stageOneMapper);
         int[] testNumbers={2,1,9,3};
-        List<String> results = stageOneSolution.CalCombinationsByNumbers(testNumbers);
+        results = stageOneSolution.CalCombinationsByNumbers(testNumbers);
+        System.out.println("result size=" + results.size());
         for(int i=0; i<results.size(); i++) {
             System.out.print(results.get(i) + " ");
         }
         System.out.println("");
         System.out.println("-------------------- Stage One Solution End ----------------------------- ");
 
-*/        System.out.println("-------------------- Stage Two Solution ---------------------------------");
+        System.out.println("-------------------- Stage Two Solution ---------------------------------");
 
         StageTwoMapper stageTwoMapper = new StageTwoMapper();
         Solution stageTwoSolution = new Solution(stageTwoMapper);
         int[] testNumbers2={1, 20, 3};
-        List<String> results = stageTwoSolution.CalCombinationsByNumbers(testNumbers2);
+        results = stageTwoSolution.CalCombinationsByNumbers(testNumbers2);
+        System.out.println("result size=" + results.size());
         for(int i=0; i<results.size(); i++) {
             System.out.print(results.get(i) + " ");
         }

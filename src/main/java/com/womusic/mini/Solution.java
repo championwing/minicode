@@ -11,14 +11,11 @@ public class Solution {
     private List<String> combinations;
     private IStringGenerator generator;
 
-    public Solution(IStringGenerator gen) {
-        combinations = new ArrayList<String>();
-        generator = gen;
-    }
+    public Solution(IStringGenerator gen) { generator = gen; }
 
     //calculate all possible strings from number serials
     public List<String> CalCombinationsByNumbers(int[] numbers) {
-        combinations.clear();
+        combinations = new ArrayList<String>();
         GenCombinations(numbers, 0, "");
         return combinations;
     }
