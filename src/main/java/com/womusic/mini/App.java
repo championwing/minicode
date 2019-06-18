@@ -31,7 +31,7 @@ public class App
 
         StageTwoMapper stageTwoMapper = new StageTwoMapper();
         Solution stageTwoSolution = new Solution(stageTwoMapper);
-        int[] testNumbers2={1, 20, 3};
+        int[] testNumbers2={91,22};
         results = stageTwoSolution.CalCombinationsByNumbers(testNumbers2);
         System.out.println("result size=" + results.size());
         for(int i=0; i<results.size(); i++) {
